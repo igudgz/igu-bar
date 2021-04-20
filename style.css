@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: url("https://i.pinimg.com/originals/46/4f/d9/464fd9d9ba7c3450c9a8ae98f3e03362.gif")
+    no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.titulo {
+  font-family: "Orbitron", sans-serif;
+  justify-content: center;
+  font-size: 30px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  color: #defe47;
+  text-shadow: 3px 3px #fe00fe;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.botao {
+  display: flex;
+  font-family: "Orbitron", sans-serif;
+  background: linear-gradient(#7700a6, #fe00fe);
+  color: #defe47;
+  text-shadow: 2px 2px #fe00fe;
+  padding: 0 5px;
+  align-items: center;
+  align-self: center;
+  margin-top: 5em;
+  justify-content: center;
+  height: 100px;
+}
+
+.botao:hover {
+  height: 110px;
+  width: 310px;
+}
+
+.caixa-aberta {
+  font-family: "Orbitron", sans-serif;
+  color: #defe47;
+  background: linear-gradient(#7700a6, #1afe49);
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 100px;
+  margin-top: 20px;
+  border: 2px solid black;
+  text-shadow: 2px 2px #fe00fe;
+}
+.caixa-fechada {
+  font-family: "Orbitron", sans-serif;
+  color: #defe47;
+  background: linear-gradient(#7700a6, #ff184c);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 100px;
+  margin-top: 20px;
+  border: 2px solid black;
+  text-shadow: 2px 2px #fe00fe;
+}
