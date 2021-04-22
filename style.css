@@ -1,11 +1,18 @@
 * {
   padding: 0;
   margin: 0;
+
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABFklEQVRYR9WXURLDIAhE6/0PbSdOtUpcd1Gnpv1KGpTHBpCE1/cXq+vrMph7dGvXZTtpfW10DCA5jrH1H0Jhs5E0hnZdCR+vb5S8Nn8mQCeS9BdSalYJqMBjAGzq59xAESN7VFVUgV8AZB/dZBR7QTFDCqGquvUBVVoEtgIwpQRzmANSFHgWQKExHdIrPeuMvQNDarXe6nC/AutgV3JW+6bgqQLeV8FekRtgV+ToDKEKnACYKsfZjjkam7a0ZpYTytwmgainpC3HvwBocgKOxqRjehoR9DFKNFYtOwCGYCszobeCbl26N6yyQ6g8X/Wex/rBPsNEV6qAMaJPMynIHQCoSqS9JSMmwef51LflTgCRszU7DvAGiV6mHWfsaVUAAAAASUVORK5CYII=),
+    auto;
 }
 body {
   background: url("https://i.pinimg.com/originals/46/4f/d9/464fd9d9ba7c3450c9a8ae98f3e03362.gif")
     no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
 }
@@ -33,6 +40,28 @@ main {
   display: flex;
   font-family: "Orbitron", sans-serif;
   background: linear-gradient(#7700a6, #fe00fe);
+  border-radius: 20px;
+  margin-top: 1%;
+  width: 13%;
+  flex-direction: column;
+  color: #defe47;
+  text-shadow: 2px 2px #fe00fe;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+}
+.imagens {
+  width: 40%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.botao-principal {
+  display: flex;
+  font-family: "Orbitron", sans-serif;
+  background: linear-gradient(#7700a6, #fe00fe);
   color: #defe47;
   text-shadow: 2px 2px #fe00fe;
   padding: 0 5px;
@@ -43,7 +72,7 @@ main {
   height: 100px;
 }
 
-.botao:hover {
+.botao-principal:hover {
   height: 110px;
   width: 310px;
 }
@@ -52,16 +81,22 @@ main {
   font-family: "Orbitron", sans-serif;
   color: #defe47;
   background: linear-gradient(#7700a6, #1afe49);
-
   display: flex;
   align-items: center;
   text-align: center;
+  flex-direction: column;
+  justify-content: space-around;
   width: 300px;
-  height: 100px;
+  height: 150px;
   margin-top: 20px;
   border: 2px solid black;
   text-shadow: 2px 2px #fe00fe;
 }
+.caixa-aberta:hover {
+  width: 300px;
+  height: 160px;
+}
+
 .caixa-fechada {
   font-family: "Orbitron", sans-serif;
   color: #defe47;
@@ -74,4 +109,29 @@ main {
   margin-top: 20px;
   border: 2px solid black;
   text-shadow: 2px 2px #fe00fe;
+}
+
+.escolha-drink {
+  display: none;
+  font-family: "Orbitron", sans-serif;
+  color: #defe47;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  /* display: flex; */
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  margin-top: 1em;
+  text-shadow: 2px 2px #fe00fe;
+}
+
+.escolha-drink ul {
+  list-style: none;
+}
+
+.drink {
+  margin: 10px;
 }
