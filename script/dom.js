@@ -34,8 +34,7 @@ btn.addEventListener("click", verifica);
 // }
 
 function verifica() {
-  var condicao = 1;
-  // Math.round(Math.random() * 2);
+  var condicao = Math.round(Math.random() * 2);
 
   if (condicao === 1) {
     layout(
@@ -43,15 +42,15 @@ function verifica() {
       "caixa-aberta",
       `
          <h2>Estamos Abertos! Bora Beber!</h2>
-        <p class='botao-escolha'>Clique aqui para escolher o seu drink!<p>`
-      // audio
+        <p class='botao-escolha'>Clique aqui para escolher o seu drink!<p>`,
+      audio
     );
   } else {
     layout(
       box2,
       "caixa-fechada",
-      `<h2>Estamos Fechados! Tururu :C</h2>`
-      // audio2
+      `<h2>Estamos Fechados! Tururu :C</h2>`,
+      audio2
     );
   }
   return condicao;
@@ -61,7 +60,7 @@ function layout(elemento, classe, mensagem, audio) {
   main.appendChild(elemento);
   elemento.classList.add(classe);
   elemento.innerHTML = mensagem;
-  // audio.play();
+  audio.play();
 }
 
 box1.addEventListener("click", function () {
